@@ -1,1 +1,41 @@
 /* principal */
+
+.iniciarSesion{
+    border: solid 1px white;
+}
+.imgm__carrusel{
+    margin: auto;
+    width: 80vw;
+    height: 20vw;
+}
+
+/* Noticias */
+.card--centrar {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__contenedorNoticias{
+    border: solid 2px black;
+    padding: 0px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2px 2px;
+}
+
+.card--height{
+    margin: 5px;
+    padding: 5px;
+    height: 350px ;
+}
+
+/* Footer */
+footer{
+    padding: 30px;
+    justify-content: space-around;
+    display: flex;
+}
+.img__footer{
+    width: 50px;
+}
