@@ -1,3 +1,5 @@
+/*Estilos Generales*/
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +12,7 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
-
+/*Pagina principal privada*/
 .collapse{
     border: 2px solid gray;
     border-radius: 10px;
@@ -49,6 +51,26 @@ body{
 }
 
 
+
+/*Administracion de usuarios y creacion*/
+
+h1, h2{
+    text-align: center;
+}
+
+.crear-usuario{
+    border: 2px solid gray;
+    border-radius: 20px;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.btn-usuario{
+    align-items: center;
+    width: 50%;
+    margin: 10px 0 10px 240px;
+    
+}
 footer{
     display: flex;
     justify-content: center;
