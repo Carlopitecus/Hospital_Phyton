@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.collapse{
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin: 10px 0;
+}
+
+.resumen{
+    margin: 10px 0;
+    border: 2px solid gray;
+    background-color:lightgray;
+    padding: 5px;
+}
+.list-group-item{
+    background-color: rgb(232, 227, 227);
+}
+
+.img-examen{
+    height: 235px;
+}
+
+.agendar{
+    text-align: center;
+}
+
+.horas{
+    width: 100%;
+}
+
+.card{
+    margin-bottom: 10px;
+}
+
+.img__footer{
+    width: 30px
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+footer .img__footer{
+    margin: 0 10px;
+}
+
+iframe{
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px;
+    color: white;
+
+}
+
+
