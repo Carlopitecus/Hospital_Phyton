@@ -49,3 +49,19 @@ footer{
 .lista{
     color: white;
 }
+
+/* Proveedores */
+
+.contenido__proveedores{
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card__proveedores{
+    border: solid 1px black;
+    margin: 5px;
+    padding: 3px;
+    
+}
