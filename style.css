@@ -1,0 +1,67 @@
+/* principal */
+
+/* logo */
+.img__logo{
+    width: 60px;
+}
+
+.iniciarSesion{
+    border: solid 1px white;
+}
+
+.img__carrusel{
+    margin: auto;
+   
+    height: 20vw;
+}
+
+/* Noticias */
+.card--centrar {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__contenedorNoticias{
+    border: solid 2px black;
+    padding: 0px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2px 2px;
+}
+
+.card--height{
+    margin: 5px;
+    padding: 5px;
+    height: 350px ;
+    margin: auto;
+    align-items: center;
+}
+
+/* Footer */
+footer{
+    justify-content: space-around;
+    padding: 10px;
+}
+.img__footer{
+    width: 30px;
+}
+.lista{
+    color: white;
+}
+
+/* Proveedores */
+
+.contenido__proveedores{
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card__proveedores{
+    border: solid 1px black;
+    margin: 5px;
+    padding: 3px;
+    
+}

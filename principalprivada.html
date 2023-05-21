@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina principal privada</title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--css-->
+    <link rel="stylesheet" href="stilos/privadaAdministracion.css">
+
+</head>
+
+<body>
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><img class="rounded-circle img__logo" src="./imagenes/PrincipalPublica/Logo.jpeg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-var" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./principalprivada.html">Administración</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="./calendariocitas.html">Calendario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tablashistoricas.html">Historica de Examenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./enfermedades.html">Historico de nfermedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./administracionDeUsusarios.html">Configuraciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Salir</a>
+                    </li>
+                </ul>
+                <div>
+                    <button class="btn btn-secondary " type="button">
+                        Sesion iniciada
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <!-- Barra lateral -->
+            <div class="col-lg-2 bg-light collapse show lateral" id="sidebar">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./administracionDeUsusarios.html">Configuraciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Salir</a>
+                    </li>
+                </ul>
+                <div>
+                    <button class="btn btn-secondary " type="button">
+                        Sesion iniciada
+                    </button>
+                </div>
+            </div>
+
+            <!-- Contenido principal -->
+            <div class="col-lg-10">
+                <h2>Resumen Ejecutivo</h2>
+                <p>Aquí se muestra un resumen de la situación del paciente.</p>
+
+                <!-- Componentes y elementos de otras páginas -->
+                <div class="card resumen">
+                    <h5 class="card-title">Recursos Principales</h5>
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Registro médico</a>
+                            <a href="#" class="list-group-item list-group-item-action">Resultados de pruebas</a>
+                            <a href="#" class="list-group-item list-group-item-action">Programación de citas</a>
+                            <a href="#" class="list-group-item list-group-item-action">Historial de medicación</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div container>
+            <div class="row">
+                <div class="col-sx-12 col-lg-4 examen agendar">
+                    <div class="card">
+                        <img src="./imagenes/principalPrivada/blood.jpg" class="card-img-top img-examen" alt="Hora medica">
+                        <div class="card-body">
+                            <h5 class="card-title">Agendar examenes</h5>
+
+                            <button type="button" class="btn btn-secondary horas " data-bs-toggle="modal" data-bs-target="#modalEditarUsuario">Solicitar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sx-12 col-lg-4">
+                    <div class="card agendar">
+                        <img src="./imagenes/principalPrivada/istockphoto-1189148737-612x612.jpg" class="card-img-top"
+                            alt="Hora Examenes">
+                        <div class="card-body">
+                            <h5 class="card-title">Agenda tu hora medica</h5>
+                            <button type="button" class="btn btn-secondary horas " data-bs-toggle="modal" data-bs-target="#modalEditarUsuario">Solicitar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sx-12 col-lg-4">
+                    <div class="card agendar">
+                        <img src="./imagenes/principalPrivada/enfwermera.jpg" class="card-img-top"
+                            alt="Hora enfermeria">
+                        <div class="card-body">
+                            <h5 class="card-title">Solicita tu hora a enfermeria</h5>
+
+                            <button type="button" class="btn btn-secondary horas " data-bs-toggle="modal" data-bs-target="#modalEditarUsuario">Solicitar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Modal de solicitud de horas -->
+        <div class="modal fade" id="modalEditarUsuario" tabindex="-1" aria-labelledby="modalEditarUsuarioLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalEditarUsuarioLabel">Agendar hora</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="crear-usuario">
+
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Digita la hora</label>
+                                <input type="text" class="form-control" id="apellido" placeholder="00:00">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Digita el día </label>
+                                <input type="email" class="form-control" id="email" placeholder="00/00/2023">
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Agendar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="bg-dark" >
+
+              <a href="https://www.instagram.com/"> <img class="img__footer"
+                src="./imagenes/principalPrivada/instagram.png" alt=""></a>
+              <a href="https://www.facebook.com/"> <img class="img__footer"
+                src="./imagenes/principalPrivada/facebook.png" alt=""></a> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.8147815289735!2d-71.55291562556172!3d-33.008658316586406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689ddc27564eed3%3A0x1626854f5dbdf867!2sAv.%20Libertad%201348%2C%20Vi%C3%B1a%20del%20Mar%2C%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1684595417392!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h5>Hospital Python</h5>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
