@@ -35,67 +35,75 @@
 
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search"
-                      aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
+                </form>
             </div>
         </div>
     </nav>
 
     <div class="container">
         <h1>Creación y Administración de Usuarios</h1>
+        <div class="row">
+            <div class="col-12">
+                <!-- Formulario para creación de usuarios -->
+                <h2>Crear Usuario</h2>
+                <form class="crear-usuario">
+                    <div class="mb-3 ">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Ingrese el apellido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese el email">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-secondary btn-usuario ">CREAR USUARIOS</button>
+                    </div>
+                </form>
 
-        <!-- Formulario para creación de usuarios -->
-        <h2>Crear Usuario</h2>
-        <form class="crear-usuario">
-            <div class="mb-3 ">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre">
+                <!-- Tabla para visualización y administración de usuarios -->
+                <h2>Usuarios</h2>
+                <table class="table crear-usuario">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Email</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Usuario 1</td>
+                            <td>Apellido 1</td>
+                            <td>usuario1@example.com</td>
+                            <td>
+                                <button type="button" class="btn btn-secondary btn-editar" data-bs-toggle="modal"
+                                    data-bs-target="#modalEditarUsuario">Editar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Usuario 2</td>
+                            <td>Apellido 2</td>
+                            <td>usuario2@example.com</td>
+                            <td>
+                                <button type="button" class="btn btn-secondary btn-editar" data-bs-toggle="modal"
+                                    data-bs-target="#modalEditarUsuario">Editar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="mb-3">
-                <label for="apellido" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="apellido" placeholder="Ingrese el apellido">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Ingrese el email">
-            </div>
-            <button type="submit" class="btn btn-secondary btn-usuario ">CREAR USAUARIOS</button>
-        </form>
 
-        <!-- Tabla para visualización y administración de usuarios -->
-        <h2>Usuarios</h2>
-        <table class="table crear-usuario">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Email</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Usuario 1</td>
-                    <td>Apellido 1</td>
-                    <td>usuario1@example.com</td>
-                    <td>
-                        <button type="button" class="btn btn-secondary btn-editar" data-bs-toggle="modal" data-bs-target="#modalEditarUsuario">Editar</button>
-                        <button class="btn btn-danger btn-sm">Eliminar</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Usuario 2</td>
-                    <td>Apellido 2</td>
-                    <td>usuario2@example.com</td>
-                    <td>
-                        <button type="button" class="btn btn-secondary btn-editar" data-bs-toggle="modal" data-bs-target="#modalEditarUsuario">Editar</button>
-                        <button class="btn btn-danger btn-sm">Eliminar</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        </div>
+
         <!-- Modal de edición -->
         <div class="modal fade" id="modalEditarUsuario" tabindex="-1" aria-labelledby="modalEditarUsuarioLabel"
             aria-hidden="true">
@@ -129,7 +137,7 @@
             </div>
         </div>
     </div>
-    
+
     <footer class="bg-dark">
 
         <a href="https://www.instagram.com/"> <img class="img__footer" src="./imagenes/instagram.png" alt=""></a>

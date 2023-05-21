@@ -66,10 +66,12 @@ h1, h2{
 }
 
 .btn-usuario{
-    align-items: center;
-    width: 50%;
-    margin: 10px 0 10px 240px;
+
     
+}
+
+.btn-editar{
+    margin-bottom: 5px;
 }
 footer{
     display: flex;
