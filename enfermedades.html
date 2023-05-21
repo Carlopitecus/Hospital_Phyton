@@ -17,44 +17,52 @@
             href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
         <!-- css -->
         <link rel="stylesheet" href="../style.css">
-
     </head>
     <body>
-
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <img src="../Hospital_Phyton/imagenes/logo.jpg"
-                    class="rounded-circle logo" alt="..." width="50">
+        <nav class="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img
+                        class="rounded-circle img__logo"
+                        src="./imagenes/PrincipalPublica/Logo.jpeg" alt></a>
                 <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse nav-var" id="navbarText">
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="#">Home</a>
+                            <a class="nav-link " aria-current="page"
+                                href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">configuraciones</a>
+                            <a class="nav-link active"
+                                href="./colaboradores.html">Colaboradores</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Salir</a>
+                            <button type="button" class="btn iniciarSesion "
+                                data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">Iniciar Sesion
+                            </button>
                         </li>
                     </ul>
-                    <div>
-                        <button class="btn btn-secondary " type="button">
-                            Sesion iniciada
-                        </button>
-                    </div>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search"
+                            placeholder="Search"
+                            aria-label="Search">
+                        <button class="  nav-item" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>
         <!-- tabla de enfermedades -->
-        <div class="container table-responsive mt-3">
+        <div class="container table-responsive mt-5">
+            <h6>TABLA HISTORICA DE ENFERMEDADES</h6>
             <table class="table table-striped display" id="tabla1">
                 <thead class="thead-dark">
                     <tr>
@@ -81,8 +89,8 @@
             </table>
         </div>
         <!-- ingreso de datos -->
-        <div class="container table-responsive mt-5">
-            <table class="table table-striped display" id="tabla2">
+        <div class="container table-responsive mt-5 mb-5">
+            <table class="table table-striped display">
                 <thead class="thead-dark">
                     <h6>INGRESO DE DATOS</h6>
                     <tr>
@@ -127,17 +135,34 @@
                 Enfermadad y/o Condicion</button>
         </div>
         <!-- footer -->
-        <footer class="bg-dark">
+        <footer class="bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col " data-bs-theme="dark">
+                        <ul class="lista">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur.</li>
 
-            <a href="https://www.instagram.com/"> <img class="img__footer"
-                    src="./imagenes/instagram.png" alt></a>
-            <a href="https://www.facebook.com/"> <img class="img__footer"
-                    src="./imagenes/facebook.png" alt></a>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.8147815289735!2d-71.55291562556172!3d-33.008658316586406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689ddc27564eed3%3A0x1626854f5dbdf867!2sAv.%20Libertad%201348%2C%20Vi%C3%B1a%20del%20Mar%2C%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1684595417392!5m2!1ses!2scl"
-                width="600" height="450" style="border:0;" allowfullscreen
-                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h5>Hospital Python</h5>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p><a href="https://www.instagram.com/"> <img
+                                    class="img__footer"
+                                    src="./imagenes/redesSociales/instagram.png"
+                                    alt></a></p>
+                        <p><a href="https://www.facebook.com/"> <img
+                                    class="img__footer"
+                                    src="./imagenes/redesSociales/facebook.png"
+                                    alt></a></p>
+                        <p><a
+                                href="https://www.google.cl/maps/@-81.2321672,-120.1675149,5z">
+                                <img class="img__footer"
+                                    src="./imagenes/redesSociales/kisspng-google-maps-computer-icons-maps-5abc3a7a4b9718.1260212915222851783096.png"
+                                    alt></a></p>
+                    </div>
+                </div>
+            </div>
         </footer>
         <!--dataTable-->
         <script src="https://code.jquery.com/jquery-3.7.0.min.js"
@@ -154,8 +179,8 @@
             crossorigin="anonymous"></script>
         <!-- jquery -->
         <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
-        <script src="./jquery.js"></script>
+        <script src="/scriptsD/jquery.js"></script>
         <!-- script ingreso datos -->
-        <script src="/script.js"></script>
+        <script src="/scriptsD/scriptD.js"></script>
     </body>
 </html>

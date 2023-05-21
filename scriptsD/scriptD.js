@@ -37,13 +37,4 @@ function ingresarlista(){
     newtr.appendChild(newtd5);
     newtr.appendChild(newtd6);
 
-    // check if found an empty child
-    if(findEmpty){
-        // if so alert
-        alert(findEmpty.name);
-    }else{
-        // if not submit form
-        
-    }
-
 }
