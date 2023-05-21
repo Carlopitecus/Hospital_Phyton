@@ -1,0 +1,95 @@
+/*Estilos Generales*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*Pagina principal privada*/
+.lateral{
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin: 10px 0;
+}
+
+.resumen{
+    margin: 10px 0;
+    border: 2px solid gray;
+    background-color:lightgray;
+    padding: 5px;
+}
+.list-group-item{
+    background-color: rgb(232, 227, 227);
+}
+
+.img-examen{
+    height: 235px;
+}
+
+.agendar{
+    text-align: center;
+}
+
+.horas{
+    width: 100%;
+}
+
+.card{
+    margin-bottom: 10px;
+}
+
+.img__footer{
+    width: 30px
+}
+
+
+
+/*Administracion de usuarios y creacion*/
+
+h1, h2{
+    text-align: center;
+}
+
+.crear-usuario{
+    border: 2px solid gray;
+    border-radius: 20px;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.btn-usuario{
+    align-items: center;
+    width: 50%;
+    margin: 10px 0 10px 240px;
+    
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+footer .img__footer{
+    margin: 0 10px;
+}
+
+iframe{
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px;
+    color: white;
+
+}
+
+
