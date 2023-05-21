@@ -93,7 +93,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Agendar examenes</h5>
 
-                            <a href="#" class="btn btn-secondary horas">Solicitar</a>
+                            <button type="button" class="btn btn-secondary horas " data-bs-toggle="modal" data-bs-target="#modalEditarUsuario">Solicitar</button>
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                             alt="Hora Examenes">
                         <div class="card-body">
                             <h5 class="card-title">Agenda tu hora medica</h5>
-                            <a href="#" class="btn btn-secondary horas">Solicitar</a>
+                            <button type="button" class="btn btn-secondary horas " data-bs-toggle="modal" data-bs-target="#modalEditarUsuario">Solicitar</button>
                         </div>
                     </div>
                 </div>
@@ -114,13 +114,44 @@
                         <div class="card-body">
                             <h5 class="card-title">Solicita tu hora a enfermeria</h5>
 
-                            <a href="#" class="btn btn-secondary horas">Solicitar</a>
+                            <button type="button" class="btn btn-secondary horas " data-bs-toggle="modal" data-bs-target="#modalEditarUsuario">Solicitar</button>
                         </div>
                     </div>
                 </div>
 
             </div>
 
+        </div>
+
+        <!-- Modal de solicitud de horas -->
+        <div class="modal fade" id="modalEditarUsuario" tabindex="-1" aria-labelledby="modalEditarUsuarioLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalEditarUsuarioLabel">Agendar hora</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="crear-usuario">
+
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Digita la hora</label>
+                                <input type="text" class="form-control" id="apellido" placeholder="00:00">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Digita el día </label>
+                                <input type="email" class="form-control" id="email" placeholder="00/00/2023">
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-secondary">Agendar</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
