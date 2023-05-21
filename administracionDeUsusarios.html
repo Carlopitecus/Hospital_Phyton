@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <img src="../Hospital_Phyton/imagenes/logo.jpg" class="rounded-circle logo" alt="..." width="50">
+            <a class="navbar-brand" href="./index.html"><img class="rounded-circle img__logo" src="./imagenes/PrincipalPublica/Logo.jpeg" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,20 +24,33 @@
             <div class="collapse navbar-collapse nav-var" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Enlaces</a>
+                        <a class="nav-link active" aria-current="page" href="./principalprivada.html">Administración</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="./calendariocitas.html">Calendario</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Noticias</a>
+                        <a class="nav-link" href="./tablashistoricas.html">Historica de Examenes</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="./enfermedades.html">Historico de nfermedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./administracionDeUsusarios.html">Configuraciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Salir</a>
+                    </li>
                 </ul>
-
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-
+                <div>
+                    <button class="btn btn-secondary " type="button">
+                        Sesion iniciada
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -60,55 +73,41 @@
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" placeholder="Ingrese el email">
             </div>
-            <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-secondary btn-usuario ">CREAR USUARIOS</button>
-            </div>
+            <button type="submit" class="btn btn-secondary btn-usuario ">CREAR USAUARIOS</button>
         </form>
 
         <!-- Tabla para visualización y administración de usuarios -->
         <h2>Usuarios</h2>
-
-        <div class="table-responsive table-responsive-sm table-responsive-md">
-            <table class="table crear-usuario">
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Email</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Usuario 1</td>
-                        <td>Apellido 1</td>
-                        <td>usuario1@example.com</td>
-                        <td>
-                            <button type="button" class="btn btn-secondary btn-editar" data-bs-toggle="modal"
-                                data-bs-target="#modalEditarUsuario">Editar</button>
-                            <button class="btn btn-danger btn-sm">Eliminar</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Usuario 2</td>
-                        <td>Apellido 2</td>
-                        <td>usuario2@example.com</td>
-                        <td>
-                            <button type="button" class="btn btn-secondary btn-editar" data-bs-toggle="modal"
-                                data-bs-target="#modalEditarUsuario">Editar</button>
-                            <button class="btn btn-danger btn-sm">Eliminar</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-      
-
-
-
-
-
-
+        <table class="table crear-usuario">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Usuario 1</td>
+                    <td>Apellido 1</td>
+                    <td>usuario1@example.com</td>
+                    <td>
+                        <button type="button" class="btn btn-secondary btn-editar" data-bs-toggle="modal" data-bs-target="#modalEditarUsuario">Editar</button>
+                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Usuario 2</td>
+                    <td>Apellido 2</td>
+                    <td>usuario2@example.com</td>
+                    <td>
+                        <button type="button" class="btn btn-secondary btn-editar" data-bs-toggle="modal" data-bs-target="#modalEditarUsuario">Editar</button>
+                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         <!-- Modal de edición -->
         <div class="modal fade" id="modalEditarUsuario" tabindex="-1" aria-labelledby="modalEditarUsuarioLabel"
             aria-hidden="true">
@@ -142,11 +141,11 @@
             </div>
         </div>
     </div>
-
+    
     <footer class="bg-dark">
 
-        <a href="https://www.instagram.com/"> <img class="img__footer" src="./imagenes/instagram.png" alt=""></a>
-        < <a href="https://www.facebook.com/"> <img class="img__footer" src="./imagenes/facebook.png" alt=""></a>
+        <a href="https://www.instagram.com/"> <img class="img__footer" src="./imagenes/principalPrivada/instagram.png" alt=""></a>
+        <a href="https://www.facebook.com/"> <img class="img__footer" src="./imagenes/principalPrivada/facebook.png" alt=""></a>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.8147815289735!2d-71.55291562556172!3d-33.008658316586406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689ddc27564eed3%3A0x1626854f5dbdf867!2sAv.%20Libertad%201348%2C%20Vi%C3%B1a%20del%20Mar%2C%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1684595417392!5m2!1ses!2scl"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
