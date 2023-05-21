@@ -16,88 +16,113 @@
         <link rel="stylesheet" href="stilos/privadaAdministracion.css">
     </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-        <div class="container">
-            <img src="../Hospital_Phyton/imagenes/logo.jpg" class="rounded-circle logo" alt="..." width="50">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse nav-var" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Enlaces</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Noticias</a>
-                    </li>
-
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search"
-                      aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <img src="./imagenes/principalPrivada/logo.jpg" class="rounded-circle logo" alt="..." width="50">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-var" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="./principalprivada.html">Administración</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./administracionDeUsusarios.html">Configuraciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./imagenes/">Salir</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <button class="btn btn-secondary " type="button">
+                            Sesion iniciada
+                        </button>
+                    </div>
+                </div>
             </div>
         </nav>
 
+        <div class="container">
+            <h1>Creación y Administración de Usuarios</h1>
+
+<<<<<<< HEAD
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <h1>Creación y Administración de Usuarios</h1>
+        <div class="row">
+            <div class="col-12">
+                <!-- Formulario para creación de usuarios -->
+                <h2>Crear Usuario</h2>
+                <form class="crear-usuario">
+                    <div class="mb-3 ">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Ingrese el apellido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese el email">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-secondary btn-usuario ">CREAR USUARIOS</button>
+                    </div>
+                </form>
 
-        <!-- Formulario para creación de usuarios -->
-        <h2>Crear Usuario</h2>
-        <form class="crear-usuario">
-            <div class="mb-3 ">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre">
+                <!-- Tabla para visualización y administración de usuarios -->
+                <h2>Usuarios</h2>
+                <table class="table crear-usuario">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Email</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Usuario 1</td>
+                            <td>Apellido 1</td>
+                            <td>usuario1@example.com</td>
+                            <td>
+                                <button type="button" class="btn btn-secondary btn-editar" data-bs-toggle="modal"
+                                    data-bs-target="#modalEditarUsuario">Editar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Usuario 2</td>
+                            <td>Apellido 2</td>
+                            <td>usuario2@example.com</td>
+                            <td>
+                                <button type="button" class="btn btn-secondary btn-editar" data-bs-toggle="modal"
+                                    data-bs-target="#modalEditarUsuario">Editar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="mb-3">
-                <label for="apellido" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="apellido" placeholder="Ingrese el apellido">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Ingrese el email">
-            </div>
-            <button type="submit" class="btn btn-secondary btn-usuario ">CREAR USAUARIOS</button>
-        </form>
 
-        <!-- Tabla para visualización y administración de usuarios -->
-        <h2>Usuarios</h2>
-        <table class="table crear-usuario">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Email</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Usuario 1</td>
-                    <td>Apellido 1</td>
-                    <td>usuario1@example.com</td>
-                    <td>
-                        <button type="button" class="btn btn-secondary btn-editar" data-bs-toggle="modal" data-bs-target="#modalEditarUsuario">Editar</button>
-                        <button class="btn btn-danger btn-sm">Eliminar</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Usuario 2</td>
-                    <td>Apellido 2</td>
-                    <td>usuario2@example.com</td>
-                    <td>
-                        <button type="button" class="btn btn-secondary btn-editar" data-bs-toggle="modal" data-bs-target="#modalEditarUsuario">Editar</button>
-                        <button class="btn btn-danger btn-sm">Eliminar</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        </div>
+
         <!-- Modal de edición -->
         <div class="modal fade" id="modalEditarUsuario" tabindex="-1" aria-labelledby="modalEditarUsuarioLabel"
             aria-hidden="true">
@@ -126,13 +151,122 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                         <button type="button" class="btn btn-secondary">Guardar</button>
+=======
+            <!-- Formulario para creación de usuarios -->
+            <h2>Crear Usuario</h2>
+            <form class="crear-usuario">
+                <div class="mb-3 ">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre"
+                        placeholder="Ingrese el nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido"
+                        placeholder="Ingrese el apellido">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email"
+                        placeholder="Ingrese el email">
+                </div>
+                <button type="submit" class="btn btn-secondary btn-usuario ">CREAR
+                    USAUARIOS</button>
+            </form>
+
+            <!-- Tabla para visualización y administración de usuarios -->
+            <h2>Usuarios</h2>
+            <table class="table crear-usuario">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Email</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Usuario 1</td>
+                        <td>Apellido 1</td>
+                        <td>usuario1@example.com</td>
+                        <td>
+                            <button type="button"
+                                class="btn btn-secondary btn-editar"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalEditarUsuario">Editar</button>
+                            <button class="btn btn-danger btn-sm">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Usuario 2</td>
+                        <td>Apellido 2</td>
+                        <td>usuario2@example.com</td>
+                        <td>
+                            <button type="button"
+                                class="btn btn-secondary btn-editar"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalEditarUsuario">Editar</button>
+                            <button class="btn btn-danger btn-sm">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Modal de edición -->
+            <div class="modal fade" id="modalEditarUsuario" tabindex="-1"
+                aria-labelledby="modalEditarUsuarioLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalEditarUsuarioLabel">Editar
+                                Usuario</h5>
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="crear-usuario">
+                                <div class="mb-3 ">
+                                    <label for="nombre" class="form-label">Agregar
+                                        examenes</label>
+                                    <input type="text" class="form-control"
+                                        id="nombre"
+                                        placeholder="Ingrese el nombre">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="apellido" class="form-label">Resultados
+                                        Examenes</label>
+                                    <input type="text" class="form-control"
+                                        id="apellido"
+                                        placeholder="Ingrese el apellido">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Dosis
+                                        de medicamentos</label>
+                                    <input type="email" class="form-control"
+                                        id="email"
+                                        placeholder="Ingrese el email">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-secondary">Guardar</button>
+                        </div>
+>>>>>>> 3a07087e4b1d6a9bcdb1b392222af6557899b87e
                     </div>
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
     </div>
-    
+
     <footer class="bg-dark">
+=======
+>>>>>>> 3a07087e4b1d6a9bcdb1b392222af6557899b87e
+
+        <footer class="bg-dark">
 
             <a href="https://www.instagram.com/"> <img class="img__footer"
                     src="./imagenes/principalPrivada/instagram.png" alt></a>
