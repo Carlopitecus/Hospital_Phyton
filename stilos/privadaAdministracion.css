@@ -70,11 +70,10 @@ h1, h2{
     padding: 10px;
 }
 
-.btn-usuario{
-    align-items: center;
-    width: 50%;
-    margin: 10px 0 10px 240px;
-    
+
+
+.btn-editar{
+    margin-bottom: 5px;
 }
 footer{
     display: flex;
